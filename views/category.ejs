@@ -3,43 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
+  <title></title>
 </head>
 <body>
 
 <%- include('./partials/nav') %>
 
-  <h1>Full Menu</h1>
+<% menuItems.forEach((item) => {  %> 
 
-  <p>name: <%= restaurant.menu[0].name %></p>
-  <p>price: <%= restaurant.menu[0].price %></p>
-  <p>rating: <%= restaurant.menu[0].rating %></p>
-  <p>category: <%= restaurant.menu[0].category %></p>
-  <p>details: <%= restaurant.menu[0].details %></p>
+  <h1><%= item.category %></h1>
 
-  <p>name: <%= restaurant.menu[1].name %></p>
-  <p>price: <%= restaurant.menu[1].price %></p>
-  <p>rating: <%= restaurant.menu[1].rating %></p>
-  <p>category: <%= restaurant.menu[1].category %></p>
-  <p>details: <%= restaurant.menu[1].details %></p>
+   
 
-  <p>name: <%= restaurant.menu[2].name %></p>
-  <p>price: <%= restaurant.menu[2].price %></p>
-  <p>rating: <%= restaurant.menu[2].rating %></p>
-  <p>category: <%= restaurant.menu[2].category %></p>
-  <p>details: <%= restaurant.menu[2].details %></p>
+  <p>name: <%= item.name %></p>
+  <p>price: <%= item.price %></p>
+  <p>rating: <%= item.rating %></p>
+  <p>category: <%= item.category %></p>
+  <p>details: <%= item.details %></p>
 
-  <p>name: <%= restaurant.menu[3].name %></p>
-  <p>price: <%= restaurant.menu[3].price %></p>
-  <p>rating: <%= restaurant.menu[3].rating %></p>
-  <p>category: <%= restaurant.menu[3].category %></p>
-  <p>details: <%= restaurant.menu[3].details %></p>
-
-  <p>name: <%= restaurant.menu[4].name %></p>
-  <p>price: <%= restaurant.menu[4].price %></p>
-  <p>rating: <%= restaurant.menu[4].rating %></p>
-  <p>category: <%= restaurant.menu[4].category %></p>
-  <p>details: <%= restaurant.menu[4].details %></p>
+  <% }) %>
 
 </body>
 </html>
